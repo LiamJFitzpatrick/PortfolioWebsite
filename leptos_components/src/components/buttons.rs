@@ -6,7 +6,8 @@ pub enum ButtonStyle {
     Secondary,
     Success,
     Danger,
-    Warning
+    Warning,
+    Cyberpunk
 }
 
 #[component]
@@ -37,6 +38,9 @@ pub fn Button(
         },
         ButtonStyle::Warning => {
             stylestring = "bg-yellow-500 hover:bg-yellow-700 text-black font-semibold py-2 px-4 rounded";
+        },
+        ButtonStyle::Cyberpunk => {
+            stylestring = "bg-[#0a0c1b] hover:bg-[#171d3a] text-white font-bold py-2 px-4 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105";
         }
     }
     logging::log!("{}", stylestring);

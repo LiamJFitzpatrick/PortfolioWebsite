@@ -5,6 +5,7 @@ use leptos_router::{
     StaticSegment,
 };
 use leptos_components::components::buttons::Button;
+use leptos_components::components::buttons::ButtonStyle;
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
@@ -58,6 +59,6 @@ fn HomePage() -> impl IntoView {
     view! {
         <h1>"Welcome to Leptos!"</h1>
         <button on:click=on_click>"Click Me: " {move || count.get()}</button>
-        <Button on:click=on_click>"Click Me: " {move || count.get()}</Button>
+        <Button style=ButtonStyle::Cyberpunk on:click=on_click>"Click Me: " {move || count.get()}</Button>
     }
 }
