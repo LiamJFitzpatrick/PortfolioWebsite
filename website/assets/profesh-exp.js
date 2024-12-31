@@ -1,5 +1,5 @@
 
-var number_exp = 2;
+var number_exp = 3;
 
 
 function drawConnections() {
@@ -13,6 +13,7 @@ function drawConnections() {
     canvas_el.setAttribute("left", content_box.left);
     const ctx = canvas_el.getContext("2d");
     ctx.strokeStyle = "#E4FDE1";
+    ctx.fillStyle = "#E4FDE1";
     for (let count = 1; count <= (number_exp-1); count++) {
         let cur_id_str = `p-e-${count}`;
         let nex_id_str = `p-e-${count+1}`;
@@ -29,6 +30,16 @@ function drawConnections() {
         ctx.moveTo(center_x, center_y);
         ctx.lineTo(next_x, next_y);
         ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(center_x, cur_box.bottom);
+        ctx.arc(center_x, cur_box.bottom, 5, 0, Math.PI);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(center_x, next_box.top);
+        ctx.arc(center_x, next_box.top, 5, 0, Math.PI, true);
+        ctx.fill();
     }
 }
 

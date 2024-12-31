@@ -68,17 +68,26 @@ fn HomePage() -> impl IntoView {
             </div>
         </div>
         <H1>"Professional Experience"</H1>
-        
+
         <div id="p-e-content" class="min-h-screen">
             
-            <div id="p-e-1" class="border border-4 m-auto mt-4 rounded w-1/2 h-fit">
+            <div id="p-e-1" class="border border-4 m-auto mt-4 rounded w-1/2 h-fit bg-[#0C120C]">
                 <div class="ml-8">
                     <H2>"Modeling Simulation & Analysis Engineer"</H2>
                     <H3>"Northrop Grumman Corporation"</H3>
                     <P>plop</P>
                 </div>
             </div>
-            <div id="p-e-2" class="border border-4 m-auto rounded w-3/5 h-32 mt-16">
+            <div class="my-16 mx-auto w-fit bg-[#0C120C]">
+                <p>2023</p>
+            </div>
+            <div id="p-e-2" class="border border-4 m-auto rounded w-3/5 h-32 bg-[#0C120C]">
+            </div>
+            <div class="my-16 mx-auto w-fit bg-[#0C120C]">
+                <p>2021</p>
+            </div>
+            <div id="p-e-3" class="border border-4 m-auto rounded w-3/5 h-32 bg-[#0C120C]">
+                <H2>Graduation</H2>
             </div>
         </div>
     }
