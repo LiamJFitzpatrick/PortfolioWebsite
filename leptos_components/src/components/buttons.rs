@@ -1,5 +1,4 @@
 use leptos::prelude::*;
-use leptos::logging;
 
 pub enum ButtonStyle {
     Primary,
@@ -25,7 +24,7 @@ pub fn Button(
     let mut stylestring = "";
     match style_type {
         ButtonStyle::Primary => {
-            stylestring = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded";
+            stylestring = "transition ease-in-out delay-150 hover:scale-110 border-2 py-2 px-4 rounded";
         },
         ButtonStyle::Secondary => {
             stylestring = "bg-gray-300 hover:bg-gray-500 text-black font-semibold py-2 px-4 rounded";
@@ -43,7 +42,6 @@ pub fn Button(
             stylestring = "bg-[#0a0c1b] hover:bg-[#171d3a] text-white font-bold py-2 px-4 rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105";
         }
     }
-    logging::log!("{}", stylestring);
     view! {
         <button class={stylestring}>{children()}</button>
     }

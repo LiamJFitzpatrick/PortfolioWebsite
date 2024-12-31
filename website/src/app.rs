@@ -1,11 +1,10 @@
 use leptos::prelude::*;
 use leptos_meta::{provide_meta_context, MetaTags, Stylesheet, Title};
 use leptos_router::{
-    components::{Route, Router, Routes},
-    StaticSegment,
+    components::{Route, Router, Routes}, path, StaticSegment
 };
-use leptos_components::components::buttons::Button;
-use leptos_components::components::buttons::ButtonStyle;
+use leptos_components::components::buttons::{Button, ButtonStyle};
+use leptos_components::components::text::{H1, H2, H3, P};
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
@@ -35,14 +34,16 @@ pub fn App() -> impl IntoView {
         // id=leptos means cargo-leptos will hot-reload this stylesheet
         <Stylesheet id="leptos" href="/pkg/website.css"/>
 
+        <Stylesheet href="/static_css.css" />
+
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="My Portfolio"/>
 
         // content for this welcome page
         <Router>
             <main>
                 <Routes fallback=|| "Page not found.".into_view()>
-                    <Route path=StaticSegment("") view=HomePage/>
+                    <Route path=path!("/") view=HomePage/>
                 </Routes>
             </main>
         </Router>
@@ -52,13 +53,16 @@ pub fn App() -> impl IntoView {
 /// Renders the home page of your application.
 #[component]
 fn HomePage() -> impl IntoView {
-    // Creates a reactive value to update the button
-    let count = RwSignal::new(0);
-    let on_click = move |_| *count.write() += 1;
-
     view! {
-        <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {move || count.get()}</button>
-        <Button style=ButtonStyle::Cyberpunk on:click=on_click>"Click Me: " {move || count.get()}</Button>
+        <div class="flex flex-row min-h-screen justify-center items-center">
+            <img class="max-w-lg rounded" src="/founder_portrait.jpg" />
+            <div class="flex flex-col m-4 p-2 items-start max-w-lg">
+                <H1>Hi!</H1>
+                <H2>"I'm Liam Fitzpatrick."</H2>
+                <P>"I'm an engineer with expertise in modeling, simulation, and process improvement. I have a proven ability 
+                to develop innovative solutions, optimize complex systems, and lead successful projects. I have some of my experiences 
+                projects outlined on this website. If you want to hire me or ask questions about my projects reach out to me "<a href="mailto:liam.fitzpatrick@live.com">here</a></P>
+            </div>
+        </div>
     }
 }
