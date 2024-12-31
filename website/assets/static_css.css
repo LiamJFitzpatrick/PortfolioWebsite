@@ -2,3 +2,16 @@ body{
     background-color: #0C120C;
     color: #E4FDE1;
 }
+
+#p-e-canvas{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#p-e-1{
+    background-color: #0C120C;
+}
+#p-e-2{
+    background-color: #0C120C;
+}
