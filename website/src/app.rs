@@ -61,20 +61,21 @@ fn HomePage() -> impl IntoView {
         <div class="flex flex-row min-h-screen justify-center items-center">
             <img class="max-w-lg rounded" src="/founder_portrait.jpg" />
             <div class="flex flex-col m-4 p-2 items-start max-w-lg">
-                <ul class="flex flex-row justify-between w-full">
+                <ul class="flex flex-row justify-around w-full">
                     <li class="border p-2"><a class="underline" href="#p-e-content">Professional Experience</a></li>
                     <li class="border p-2"><a class="underline" href="#proj-content">Projects</a></li>
                 </ul>
                 <H1>Hi!</H1>
                 <H2>"I'm Liam Fitzpatrick."</H2>
-                <P>"I'm an engineer with expertise in modeling, simulation, and process improvement. I have a proven ability 
+                <P>"I'm an engineer with expertise in programming, simulation, and process improvement. I have a proven ability 
                 to develop innovative solutions, optimize complex systems, and lead successful projects. I have some of my experiences 
                 projects outlined on this website. If you want to hire me or ask questions about my projects reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
             </div>
         </div>
-        <H1>"Professional Experience"</H1>
+        
 
         <div id="p-e-content" class="min-h-screen">
+            <H1>"Professional Experience"</H1>
             
             <ProfessionalExperienceCard
                 img_path="/NGC-logo-white-on-clear.webp".into()
@@ -118,6 +119,29 @@ fn HomePage() -> impl IntoView {
             
         </div>
 
-        <H1>"Projects"</H1>
+        
+        <div id="proj-content" class="min-h-screen">
+            <H1>"Projects"</H1>
+            <ProfessionalExperienceCard
+                img_path="/strategyeats_logo.png".into()
+                heading="StrategyEats.com".into()
+                subtitle="Founder & President".into()
+                id="proj-1".into()
+                experience_blurbs=vec![
+                    "Meal delivery platform with the mission to help combat the challenges that Americans face when it comes to eating. I want eating healthy to be an enjoyable and easy thing for all of us. StrategyEats.com provides ready-to-eat meals delivered to your doorstep, through an intuitive website interface.".into(),
+                    "I was able to achieve over $2k in revenu in second month of accepting orders. Received great positive feedback.".into(),
+                    "Developed the platform using Leptos framework, a fullstack web framework written in Rust. The platform has an integrated resource planning, recipe planning, and point of sale system allowing for streamline operation between the customer and production.".into(),
+                    "Created the business model and business plan. ".into(),
+                ] />
+            <ProfessionalExperienceCard 
+                img_path="/strategylifts_logo.png".into()
+                heading="StrategyLifts.com".into()
+                subtitle="Sole Developer".into()
+                id="proj-2".into()
+                experience_blurbs=vec![
+                    "Workout tracking platform designed for those who like to look at data! Website tracks progression and suggests workout plans to assist user into progressive overload. Allows for sharing workouts, tracking progress, and getting recommended workouts. ".into(),
+                    "This website utilizes the Django framework, written in Python. The site is currently free for anyone to use. I don't have any current plans to monetize the project, I currently use it myself to track my workouts and let anyone else do the same!".into(),
+                ] />
+        </div>
     }
 }
