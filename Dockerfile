@@ -35,4 +35,10 @@ FROM ubuntu
 WORKDIR /app
 COPY --from=buildstage /app/website/target/release/website ./
 COPY --from=buildstage /app/website/target/site ./site/
+
+# Set any required env variables and
+ENV RUST_LOG="info"
+ENV LEPTOS_SITE_ADDR="0.0.0.0:8080"
+ENV LEPTOS_SITE_ROOT="site"
+
 CMD ./website
