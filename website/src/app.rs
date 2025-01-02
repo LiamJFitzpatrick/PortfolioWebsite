@@ -5,6 +5,7 @@ use leptos_router::{
 };
 use leptos_components::components::buttons::{Button, ButtonStyle};
 use leptos_components::components::text::{H1, H2, H3, P};
+use leptos_components::elements::cards::ProfessionalExperienceCard;
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
@@ -71,39 +72,33 @@ fn HomePage() -> impl IntoView {
 
         <div id="p-e-content" class="min-h-screen">
             
-            <div id="p-e-1" class="border border-4 m-auto mt-4 rounded w-3/5 h-fit bg-[#0C120C] flex flex-row justify-around p-4">
-                <div class="flex flex-col justify-center space-y-2">
-                    <img src="/NGC-logo-white-on-clear.webp" class="max-w-1/4" />
-                    <H2>"Modeling Simulation & Analysis Engineer"</H2>
-                    <H3>"Northrop Grumman Corporation"</H3>
-                </div>
-                <div class="space-y-2">
-                    <P>"Developed a high-fidelity C++ simulation of air-to-air radars for Northrop Grumman’s Emerging Capabilities division."</P>
-                    <P>"Lead software development process of C++ simulation for a team of 6 engineers."</P>
-                    <P>"Created tooling to analyze IQ data, determining angle of arrival, range, and velocity of returns."</P>
-                    <P>"Contributed to technical documentation process – Model Design Review (MDR) – at all stages."</P>
-                    <P>"Developed a web application – PyCAM – to assist control account managers in tracking costs within programs."</P>
-                    <P>"Additionally: recognized as Top Performer, mentored & trained other engineers"</P>
-                </div>
-            </div>
+            <ProfessionalExperienceCard
+                img_path="/NGC-logo-white-on-clear.webp".into()
+                heading="Modeling Simulation & Analysis Engineer".into()
+                subtitle="Northrop Grumman Corporation".into()
+                id="p-e-1".into()
+                experience_blurbs=vec![
+                    "Developed C++ simulation for high fidelity simulation of air-to-air radars for Emerging Capabilities division. The system simulates from the environment to IQ data returns connected to operational flight program. ".into(),
+                    "Lead software development process of C++ simulation for a team of 6 engineers.".into(),
+                    "Created tooling to assist in analyzing IQ data for understanding the angle of arrival, range, and velocity of return. The tool uses a Qt graphical user interface to allow the user to select which set of data to pr".into(),
+                    "Contributed to technical documentation process – Model Design Review (MDR) – at all stages.".into(),
+                    "Developed a web application – PyCAM – to assist control account managers in tracking costs within programs.".into(),
+                    "Additionally: recognized as Top Performer, mentored & trained other engineers".into(),
+                ] />
             <div class="my-16 mx-auto w-fit bg-[#0C120C]">
                 <p>2023</p>
             </div>
-            <div id="p-e-2" class="border border-4 m-auto mt-4 rounded w-3/5 h-fit bg-[#0C120C] flex flex-row justify-around p-4">
-                <div class="flex flex-col justify-center max-w-1/4">
-                    <img src="/Ingredion_Logo_WebUseOnly_500.png" />
-                    <H2>"Process Lead / Process Engineer"</H2>
-                    <H3>"Ingredion Incorporated"</H3>
-                </div>
-                <div>
-                    <P>"Developed a high-fidelity C++ simulation of air-to-air radars for Northrop Grumman’s Emerging Capabilities division."</P>
-                    <P>"Lead software development process of C++ simulation for a team of 6 engineers."</P>
-                    <P>"Created tooling to analyze IQ data, determining angle of arrival, range, and velocity of returns."</P>
-                    <P>"Contributed to technical documentation process – Model Design Review (MDR) – at all stages."</P>
-                    <P>"Developed a web application – PyCAM – to assist control account managers in tracking costs within programs."</P>
-                    <P>"Additionally: recognized as Top Performer, mentored & trained other engineers"</P>
-                </div>
-            </div>
+            <ProfessionalExperienceCard
+                img_path="/Ingredion_Logo_WebUseOnly_500.png".into()
+                heading="Process Lead / Process Engineer".into()
+                subtitle="Ingredion Incorporated".into()
+                id="p-e-2".into()
+                experience_blurbs=vec![
+                    "Provided data visualization tools to empower informed decision making during my time at facility and beyond. These tools allowed us to identify a bottleneck in the starch dewatering process. The Merco centrifuges were running 10 baume on underflow this was causing slow cycle times on Reinvelds. Not long after this and a few mechanical changes we were able to hit a new record of 2.05 million pounds of starch dried in one day.".into(),
+                    "Managed contractors on project installs. Refurbished blend bin lid. Installed metal detector on line 2. Fixed and installed chemical line on LNP unit for HCl metering. Installed level detection equipment on various bins to provide greater insight into process health.".into(),
+                    "Installed RF Gen barcoding system to allow for real time inventory tracking off production lines. Developed new standard procedures and trained with the new process. Developed project dashboards to display real time data to management and to line workers.".into()
+                ] />
+            
             <div class="my-16 mx-auto w-fit bg-[#0C120C]">
                 <p>2021</p>
             </div>
