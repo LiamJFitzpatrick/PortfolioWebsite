@@ -29,8 +29,7 @@ pub fn ProfessionalExperienceCard(
             stylestring = "font-sans text-2xl";
         }
     }
-    
-    view! {
+    view!{
         <div id={id} class="border border-4 m-auto mt-4 rounded w-9/12 bg-[#0C120C] flex flex-row justify-around p-4">
             <div class="flex flex-col justify-center space-y-2 w-1/4">
                 <img src={img_path} class="w-full" />
@@ -40,10 +39,11 @@ pub fn ProfessionalExperienceCard(
             <div class="space-y-2 w-2/4">
                 {
                     experience_blurbs.into_iter().map(|item| view!{
-                        <P>{item}</P>
+                        <P prop:innerHTML={item}>""</P>
                     }).collect_view()
                 }
             </div>
         </div>
     }
 }
+    

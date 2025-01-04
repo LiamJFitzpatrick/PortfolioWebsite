@@ -129,9 +129,10 @@ fn HomePage() -> impl IntoView {
                 id="proj-1".into()
                 experience_blurbs=vec![
                     "Meal delivery platform with the mission to help combat the challenges that Americans face when it comes to eating. I want eating healthy to be an enjoyable and easy thing for all of us. StrategyEats.com provides ready-to-eat meals delivered to your doorstep, through an intuitive website interface.".into(),
-                    "I was able to achieve over $2k in revenu in second month of accepting orders. Received great positive feedback.".into(),
-                    "Developed the platform using Leptos framework, a fullstack web framework written in Rust. The platform has an integrated resource planning, recipe planning, and point of sale system allowing for streamline operation between the customer and production.".into(),
+                    "I was able to achieve over $2k in revenue in second month of accepting orders. Received great positive feedback.".into(),
+                    "I developed the platform using the Leptos framework, a full-stack web framework written in Rust. The platform has an integrated resource planning, recipe planning, and point of sale system, allowing for streamlined operations between the customer and production.".into(),
                     "Created the business model and business plan. ".into(),
+                    "Check it out now by visiting <a href=\"https://www.strategyeats.com\">https://www.strategyeats.com</a>.".into(),
                 ] />
             <ProfessionalExperienceCard 
                 img_path="/strategylifts_logo.png".into()
@@ -141,6 +142,17 @@ fn HomePage() -> impl IntoView {
                 experience_blurbs=vec![
                     "Workout tracking platform designed for those who like to look at data! Website tracks progression and suggests workout plans to assist user into progressive overload. Allows for sharing workouts, tracking progress, and getting recommended workouts. ".into(),
                     "This website utilizes the Django framework, written in Python. The site is currently free for anyone to use. I don't have any current plans to monetize the project, I currently use it myself to track my workouts and let anyone else do the same!".into(),
+                    "Check it out now by visiting <a href=\"https://www.strategylifts.com\">https://www.strategylifts.com</a>.".into(),
+                ] />
+
+            <ProfessionalExperienceCard
+                img_path="/00112-3953999397.png".into()
+                heading="CapitalCompass".into()
+                subtitle="Sole Developer".into()
+                id="proj-3".into()
+                experience_blurbs=vec![
+                    "Financial tracking application. Current targeted features are tracking spending and financial projections. The spending tracking is geared towards a method that me and my wife use for tracking our bills. The financial projections are designed for simulating business scenarios to determine profitability. ".into(),
+                    "This tool is still a work in progress. I am building it as a local application but using Tauri to develop it. Tauri is similar to Electron for JavaScript applications but it is written in Rust.".into()
                 ] />
         </div>
     }
