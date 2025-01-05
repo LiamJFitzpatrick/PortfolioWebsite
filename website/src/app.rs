@@ -66,6 +66,7 @@ fn HomePage() -> impl IntoView {
                 <ul class="flex flex-row justify-around w-full">
                     <li class="border p-2"><a class="underline" href="#p-e-content">Professional Experience</a></li>
                     <li class="border p-2"><a class="underline" href="#proj-content">Projects</a></li>
+                    <li class="border p-2"><a class="underline" href="https://github.com/LiamJFitzpatrick/PortfolioWebsite">Source</a></li>
                 </ul>
                 <H1>Hi!</H1>
                 <H2>"I'm Liam Fitzpatrick."</H2>
