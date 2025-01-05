@@ -57,8 +57,10 @@ pub fn App() -> impl IntoView {
 #[component]
 fn HomePage() -> impl IntoView {
     view! {
-        <canvas id="p-e-canvas"></canvas>
-        <div class="md:flex md:flex-row min-h-screen md:justify-center md:items-center">
+        <script type="module" src="/load_bevy_anim.js">
+        </script>
+        <canvas id="bevy-canvas1" width="100vw"></canvas>
+        <div id="hero" class="md:flex md:flex-row min-h-screen md:justify-center md:items-center">
             <img class="max-w-lg rounded hidden md:block" src="/founder_portrait.jpg" />
             <div class="flex flex-col m-4 p-2 items-start max-w-lg">
                 <ul class="flex flex-row justify-around w-full">
@@ -72,6 +74,8 @@ fn HomePage() -> impl IntoView {
                 projects outlined on this website. If you want to hire me or ask questions about my projects reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
             </div>
         </div>
+
+        <canvas id="p-e-canvas"></canvas>
         
 
         <div id="p-e-content" class="min-h-screen">
