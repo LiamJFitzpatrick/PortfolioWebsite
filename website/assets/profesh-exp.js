@@ -44,13 +44,17 @@ function drawConnections() {
 }
 
 function moveBevy() {
-    const canvas_el = document.getElementById("bevy-canvas1");
+    var canvas_el = document.getElementById("bevy-canvas1");
     const content_el = document.getElementById("hero");
     const content_box = content_el.getBoundingClientRect();
     canvas_el.setAttribute("width", content_box.width);
     canvas_el.setAttribute("height", content_box.height);
     canvas_el.setAttribute("top", content_box.top);
     canvas_el.setAttribute("left", content_box.left);
+    canvas_el.style.width = content_box.width;
+    canvas_el.style.height = content_box.height;
+    canvas_el.style.top = content_box.top;
+    canvas_el.style.left = content_box.left;
 }
 
 window.addEventListener("scroll", (event) => {

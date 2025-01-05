@@ -71,7 +71,7 @@ fn HomePage() -> impl IntoView {
                 <H2>"I'm Liam Fitzpatrick."</H2>
                 <P>"I'm an engineer with expertise in programming, simulation, and process improvement. I have a proven ability 
                 to develop innovative solutions, optimize complex systems, and lead successful projects. I have some of my experiences 
-                projects outlined on this website. If you want to hire me or ask questions about my projects reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
+                outlined on this website. If you want to hire me or ask questions about my projects reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
             </div>
         </div>
 
@@ -94,7 +94,7 @@ fn HomePage() -> impl IntoView {
                     "Developed a web application – PyCAM – to assist control account managers in tracking costs within programs.".into(),
                     "Additionally: recognized as Top Performer, mentored & trained other engineers".into(),
                 ] />
-            <div class="my-16 mx-auto w-fit bg-[#0C120C]">
+            <div class="my-16 mx-auto w-fit">
                 <p>2023</p>
             </div>
             <ProfessionalExperienceCard
@@ -109,7 +109,7 @@ fn HomePage() -> impl IntoView {
                     "Installed RF Gen barcoding system to allow for real time inventory tracking off production lines. Developed new standard procedures and trained with the new process. Developed project dashboards to display real time data to management and to line workers.".into()
                 ] />
             
-            <div class="my-16 mx-auto w-fit bg-[#0C120C]">
+            <div class="my-16 mx-auto w-fit">
                 <p>2021</p>
             </div>
             <ProfessionalExperienceCard
