@@ -30,7 +30,7 @@ pub fn ProfessionalExperienceCard(
         }
     }
     view!{
-        <div id={id} class="border border-4 m-auto mt-4 rounded w-9/12 bg-[#0C120C] med:flex med:flex-row justify-around p-4">
+        <div id={id} class="border border-4 m-auto mt-4 rounded w-9/12 bg-[#0C120C] md:flex md:flex-row justify-around p-4">
             <div class="flex flex-col justify-center space-y-2 md:w-1/4">
                 <img src={img_path} class="w-full" />
                 <H2>{heading}</H2>
