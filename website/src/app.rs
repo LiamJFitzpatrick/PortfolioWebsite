@@ -113,7 +113,7 @@ fn HomePage() -> impl IntoView {
                 <p>2021</p>
             </div>
             <ProfessionalExperienceCard
-                img_path="/UMBC-primary-logo-RGB-2k.png".into()
+                img_path="/UMBCretrievers_LOGO.jpg".into()
                 heading="Bachelor of Science in Chemical Engineering".into()
                 subtitle="University of Maryland, Baltimore County".into()
                 id="p-e-3".into()
