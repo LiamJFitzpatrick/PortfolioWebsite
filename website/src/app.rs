@@ -61,7 +61,7 @@ fn HomePage() -> impl IntoView {
         </script>
         <canvas id="bevy-canvas1" width="100vw"></canvas>
         <div id="hero" class="md:flex md:flex-row min-h-screen md:justify-center md:items-center">
-            <img class="max-w-lg rounded hidden md:block" src="/founder_portrait.jpg" />
+            <img width="320px" class="rounded" src="/00114-3885650054.png" />
             <div class="flex flex-col m-4 p-2 items-start max-w-lg">
                 <ul class="flex flex-row justify-around w-full">
                     <li class="border p-2"><a class="underline" href="#p-e-content">Professional Experience</a></li>
@@ -71,7 +71,7 @@ fn HomePage() -> impl IntoView {
                 <H2>"I'm Liam Fitzpatrick."</H2>
                 <P>"I'm an engineer with expertise in programming, simulation, and process improvement. I have a proven ability 
                 to develop innovative solutions, optimize complex systems, and lead successful projects. I have some of my experiences 
-                outlined on this website. If you want to hire me or ask questions about my projects reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
+                outlined on this website. If you want to hire me or ask questions about my projects, reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
             </div>
         </div>
 
