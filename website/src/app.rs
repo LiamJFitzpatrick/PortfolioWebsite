@@ -58,7 +58,7 @@ pub fn App() -> impl IntoView {
 fn HomePage() -> impl IntoView {
     view! {
         <canvas id="p-e-canvas"></canvas>
-        <div class="flex flex-row min-h-screen justify-center items-center">
+        <div class="med:flex med:flex-row min-h-screen med:justify-center med:items-center">
             <img class="max-w-lg rounded" src="/founder_portrait.jpg" />
             <div class="flex flex-col m-4 p-2 items-start max-w-lg">
                 <ul class="flex flex-row justify-around w-full">
