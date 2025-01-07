@@ -1,0 +1,15 @@
+As a simulation engineer at Northrop Grumman's Emerging Capabilities division, I am currently developing a high-fidelity C++ simulation system that accurately simulates air-to-air radars. This innovative system connects the operational flight program to IQ data returns generated from the environment, pushing the boundaries of radar simulation technology and setting new standards in the field."
+
+Currently overseeing the software development process for this cutting-edge simulation requires strong technical expertise and leadership skills. By holding regular meetings and discussing updates from team members, I contribute to ensuring that the project progresses smoothly and efficiently while maintaining the highest standards of quality and innovation."
+
+I improved our analysis capabilities by enhancing an existing Qt graphical user interface tool. This updated tool allowed analysts to select specific data sets for processing and visualize range-doppler maps for thorough review. To further aid analysis, I implemented an angle of arrival estimation algorithm, enabling users to identify and visualize the estimated angle of arrival for areas of interest on the range-dopler map."
+
+Furthermore, I addressed the previous issue of tool crashes with large datasets by improving the binary file IQ parser. I introduced a just-in-time approach that only reads in header files to gather the necessary information to parse IQ binary until that specific set of data is needed. Additionally, I implemented an LRU caching algorithm to allow for speedy recall of recent pieces of data."
+
+To streamline analysis, I designed a configuration file that allowed the tool to remember and restore the user's previous session state, significantly reducing analysis time."
+
+My contributions extended beyond software development. I actively participated in the technical documentation process, playing a crucial role in Model Design Reviews (MDRs) at every stage of the project. This commitment to thorough documentation ensured that our work met the highest standards and was easily understood by all stakeholders."
+
+In addition to simulation development, I created PyCAM – a web application tailored for Control Account Managers (CAMs). This tool revolutionized cost tracking within programs, providing CAMs with real-time insights and enabling data-driven decision-making."
+
+Throughout my ongoing tenure at Northrop Grumman, I have demonstrated exceptional performance and earned the title of Top Performer during my first year. Since then, I consistently strive to maintain this high level of excellence in my work. Moreover, I take an active role in mentoring and training other engineers, fostering a culture of growth and knowledge sharing within the team. My dedication to excellence, leadership abilities, and commitment to innovation make me a valuable asset to the Emerging Capabilities division at Northrop Grumman, as I continue my work with the company."
