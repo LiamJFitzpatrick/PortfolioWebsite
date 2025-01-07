@@ -56,6 +56,22 @@ pub fn App() -> impl IntoView {
 /// Renders the home page of your application.
 #[component]
 fn HomePage() -> impl IntoView {
+
+    let mut all_northrop_exp: Vec<String> = vec![];
+    let mut all_ingredion_exp: Vec<String> = vec![];
+
+    for section in include_str!("../inputs/northrop.md").to_string().split("\n") {
+        if section != "" {
+            all_northrop_exp.push(section.to_string());
+        }
+    }
+
+    for section in include_str!("../inputs/ingredion.md").to_string().split("\n") {
+        if section != "" {
+            all_ingredion_exp.push(section.to_string());
+        }
+    }
+
     view! {
         <script type="module" src="/load_bevy_anim.js">
         </script>
@@ -87,16 +103,7 @@ fn HomePage() -> impl IntoView {
                 heading="Modeling Simulation & Analysis Engineer".into()
                 subtitle="Northrop Grumman Corporation".into()
                 id="p-e-1".into()
-                experience_blurbs=vec![
-                    "As a simulation engineer at Northrop Grumman's Emerging Capabilities division, I am currently developing a high-fidelity C++ simulation system that accurately simulates air-to-air radars. This innovative system connects the operational flight program to IQ data returns generated from the environment, pushing the boundaries of radar simulation technology and setting new standards in the field.".into(),
-                    "Currently overseeing the software development process for this cutting-edge simulation requires strong technical expertise and leadership skills. By holding regular meetings and discussing updates from team members, I contribute to ensuring that the project progresses smoothly and efficiently while maintaining the highest standards of quality and innovation.".into(),
-                    "I improved our analysis capabilities by enhancing an existing Qt graphical user interface tool. This updated tool allowed analysts to select specific data sets for processing and visualize range-doppler maps for thorough review. To further aid analysis, I implemented an angle of arrival estimation algorithm, enabling users to identify and visualize the estimated angle of arrival for areas of interest on the range-dopler map.".into(),
-                    "Furthermore, I addressed the previous issue of tool crashes with large datasets by improving the binary file IQ parser. I introduced a just-in-time approach that only reads in header files to gather the necessary information to parse IQ binary until that specific set of data is needed. Additionally, I implemented an LRU caching algorithm to allow for speedy recall of recent pieces of data.".into(),
-                    "To streamline analysis, I designed a configuration file that allowed the tool to remember and restore the user's previous session state, significantly reducing analysis time.".into(),
-                    "My contributions extended beyond software development. I actively participated in the technical documentation process, playing a crucial role in Model Design Reviews (MDRs) at every stage of the project. This commitment to thorough documentation ensured that our work met the highest standards and was easily understood by all stakeholders.".into(),
-                    "In addition to simulation development, I created PyCAM – a web application tailored for Control Account Managers (CAMs). This tool revolutionized cost tracking within programs, providing CAMs with real-time insights and enabling data-driven decision-making.".into(),
-                    "Throughout my ongoing tenure at Northrop Grumman, I have demonstrated exceptional performance and earned the title of Top Performer during my first year. Since then, I consistently strive to maintain this high level of excellence in my work. Moreover, I take an active role in mentoring and training other engineers, fostering a culture of growth and knowledge sharing within the team. My dedication to excellence, leadership abilities, and commitment to innovation make me a valuable asset to the Emerging Capabilities division at Northrop Grumman, as I continue my work with the company.".into(),
-                ] />
+                experience_blurbs=all_northrop_exp />
             <div class="my-16 mx-auto w-fit">
                 <p>2023</p>
             </div>
@@ -105,14 +112,7 @@ fn HomePage() -> impl IntoView {
                 heading="Process Lead / Process Engineer".into()
                 subtitle="Ingredion Incorporated".into()
                 id="p-e-2".into()
-                experience_blurbs=vec![
-                    "After graduating, I embarked on a rewarding journey at Ingredion, working at two distinct facilities. In Indianapolis, I took on the role of Process Lead for the Co-Products department, overseeing the daily operations and ensuring seamless performance.".into(),
-                    "My experience expanded further when I moved to Kansas City, where I served as the Process Engineer, occasionally stepping in as the Process Lead. Throughout my tenure, I worked diligently across the Treating, Drying, and Packaging departments, focusing on people management and maintaining optimal day-to-day processes.".into(),
-                    "One of my significant contributions was developing data visualization tools that empowered informed decision-making not only within the facilities but also beyond. These innovative tools enabled us to identify a critical bottleneck in the starch dewatering process, where the Merco centrifuges were running 10 baume on underflow. This issue led to slow cycle times on Reinvelds. However, by implementing a few strategic mechanical changes, we achieved a new record of 2.05 million pounds of starch dried in a single day.".into(),
-                    "Throughout my time at Ingredion, I spearheaded various smaller project installations, each with budgets under $500,000. These projects included refurbishing blend bin lids, installing metal detectors on line 2, fixing and installing the chemical line on the LNP unit for HCl metering, and implementing level detection equipment on various bins to provide real-time insights into process health.".into(),
-                    "Moreover, I played a pivotal role in introducing the RF Gen barcoding system, which revolutionized inventory tracking by allowing for real-time monitoring off production lines. I also developed new standard procedures, trained employees with the new process, and created project dashboards to display real-time data to both management and line workers.".into(),
-                    "My time at Ingredion was filled with challenges and achievements, providing me with valuable experience in people management, process optimization, and technological innovation within the food industry.".into(),
-                ] />
+                experience_blurbs=all_ingredion_exp />
             
             <div class="my-16 mx-auto w-fit">
                 <p>2021</p>
