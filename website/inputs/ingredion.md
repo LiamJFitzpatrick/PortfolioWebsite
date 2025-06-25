@@ -1,14 +1,9 @@
-After graduating, I embarked on a rewarding journey at Ingredion, working at two distinct facilities. I joined the Global Training for Operations (GTO) program at the organization. The program was designed to train high performing early talent to become leaders in industry.
+After graduating, I joined Ingredion’s Global Training for Operations (GTO) program, designed to develop high-potential talent for leadership roles.
 
-I moved to Kansas City first, where I served as the Process Engineer, occasionally stepping in as the Process Lead. Throughout my tenure, I worked diligently across the Treating, Drying, and Packaging departments, focusing on process optimization and data integration.
+At the Kansas City facility, I worked as a Process Engineer with responsibilities spanning Treating, Drying, and Packaging departments, focusing on optimizing processes and integrating data systems. Later, in Indianapolis, I served as Process Lead for the Co-Products department, where I oversaw daily operations, emphasizing safety and equipment reliability.
 
-In Indianapolis, I took on the role of Process Lead for the Co-Products department, overseeing the daily operations and ensuring seamless performance. A lot of my day to day was ensuring the safety of the team and smooth operation of the equipment.
+A key achievement was developing data visualization tools that enabled actionable insights across facilities. These tools helped identify a bottleneck in the starch dewatering process related to Merco centrifuge underflow, leading to targeted mechanical adjustments that resulted in a record throughput of 2.05 million pounds of starch dried in a single day.
 
-One of my significant contributions was developing data visualization tools that empowered informed decision-making not only within the facilities but also beyond. These innovative tools enabled us to identify a critical bottleneck in the starch dewatering process, where the Merco centrifuges were running 10 baume on underflow. This issue led to slow cycle times on Reinvelds. However, by implementing a few strategic mechanical changes powered by data insights, we achieved a new record of 2.05 million pounds of starch dried in a single day.
+I managed multiple process improvement projects under $500,000, including equipment refurbishments and installation of real-time level detection sensors to enhance process monitoring. Additionally, I led the implementation of an RF Gen barcoding system, transforming inventory tracking with real-time production line visibility. I supported adoption through new standard procedures, employee training, and project dashboards displaying live data for management and operators.
 
-Throughout my time at Ingredion, I spearheaded various smaller project installations, each with budgets under $500,000. These projects included refurbishing blend bin lids, installing metal detectors on line 2, fixing and installing the chemical line on the LNP unit for HCl metering, and implementing level detection equipment on various bins to provide real-time insights into process health.
-
-Moreover, I played a pivotal role in introducing the RF Gen barcoding system, which revolutionized inventory tracking for the Kansas City facility by allowing for real-time monitoring off production lines. I also developed new standard procedures, trained employees with the new process, and created project dashboards to display real-time data to both management and line workers.
-
-My time at Ingredion was filled with challenges and achievements, providing me with valuable experience in people management, process optimization, and technological innovation within the food industry.
-
+Overall, my tenure at Ingredion sharpened my skills in process optimization, data-driven decision-making, and operational technology integration within a manufacturing environment.

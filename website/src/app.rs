@@ -77,7 +77,7 @@ fn HomePage() -> impl IntoView {
         </script>
         <canvas id="bevy-canvas1" width="100vw"></canvas>
         <div id="hero" class="md:flex md:flex-row min-h-screen md:justify-center md:items-center">
-            <img width="320px" class="rounded" src="/00114-3885650054.png" />
+            <img width="320px" class="rounded" src="/founder_portrait.jpg" />
             <div class="flex flex-col m-4 p-2 items-start max-w-lg">
                 <ul class="flex flex-row justify-around w-full">
                     <li class="border p-2"><a class="underline" href="#p-e-content">Professional Experience</a></li>
@@ -132,6 +132,15 @@ fn HomePage() -> impl IntoView {
         <div id="proj-content" class="min-h-screen">
             <H1>"Projects"</H1>
             <ProfessionalExperienceCard
+                img_path="/CITADEL HOSTS-1-1.jpg".into()
+                heading="Citadel Hosts".into()
+                subtitle="Creator".into()
+                id="proj-4".into()
+                experience_blurbs=vec![
+                    "Container orchestration tool. Web frontend for interaction. Distributed backend with a controller worker architecture. Allow installation and management of popular self hosted tools across distributed backend of workers.".into(),
+                    "I'm still very much early working on this. I have a proof of concept.".into()
+                ] />
+            <ProfessionalExperienceCard
                 img_path="/strategyeats_logo.png".into()
                 heading="StrategyEats.com".into()
                 subtitle="Founder & President".into()
@@ -141,7 +150,7 @@ fn HomePage() -> impl IntoView {
                     "I was able to achieve over $2k in revenue in second month of accepting orders. Received great positive feedback.".into(),
                     "I developed the platform using the Leptos framework, a full-stack web framework written in Rust. The platform has an integrated resource planning, recipe planning, and point of sale system, allowing for streamlined operations between the customer and production.".into(),
                     "Created the business model and business plan. ".into(),
-                    "Check it out now by visiting <a href=\"https://www.strategyeats.com\">https://www.strategyeats.com</a>.".into(),
+                    "Although I had a lot of passion for this project, it became clear that I was not going to be able to maintain it the way I would like to at this time. The resources required to operate and run a kitchen were just too steep for me in this stage of my life.".into(),
                 ] />
             <ProfessionalExperienceCard 
                 img_path="/strategylifts_logo.png".into()
@@ -151,7 +160,7 @@ fn HomePage() -> impl IntoView {
                 experience_blurbs=vec![
                     "Workout tracking platform designed for those who like to look at data! Website tracks progression and suggests workout plans to assist user into progressive overload. Allows for sharing workouts, tracking progress, and getting recommended workouts. ".into(),
                     "This website utilizes the Django framework, written in Python. The site is currently free for anyone to use. I don't have any current plans to monetize the project, I currently use it myself to track my workouts and let anyone else do the same!".into(),
-                    "Check it out now by visiting <a href=\"https://www.strategylifts.com\">https://www.strategylifts.com</a>.".into(),
+                    "I am planning to release it as a self-hostable application and open-source it on GitHub soon.".into(),
                 ] />
 
             <ProfessionalExperienceCard
@@ -160,8 +169,8 @@ fn HomePage() -> impl IntoView {
                 subtitle="Sole Developer".into()
                 id="proj-3".into()
                 experience_blurbs=vec![
-                    "Financial tracking application. Current targeted features are tracking spending and financial projections. The spending tracking is geared towards a method that me and my wife use for tracking our bills. The financial projections are designed for simulating business scenarios to determine profitability. ".into(),
-                    "This tool is still a work in progress. I am building it as a local application but using Tauri to develop it. Tauri is similar to Electron for JavaScript applications but it is written in Rust.".into()
+                    "Financial tracking application. Current targeted features are tracking spending and financial projections. The spending tracking is geared towards a method that me and my wife use for tracking our bills. The financial projections are designed for simulating investment and business scenarios to determine profitability. ".into(),
+                    "This tool is still a work in progress. I am building it as a self-hostable tool for people interested in data privacy and locally managing their own financial tools.".into()
                 ] />
         </div>
     }
