@@ -87,7 +87,7 @@ fn HomePage() -> impl IntoView {
                 <H1>Hi!</H1>
                 <H2>"I'm Liam Fitzpatrick."</H2>
                 <P>"I'm an engineer with expertise in programming, simulation, and process improvement. I have a proven ability 
-                to develop innovative solutions, optimize complex systems, and lead successful projects. I have some of my experiences 
+                to develop innovative solutions, optimize complex systems, and lead successful projects. I'm passionate about learning and utilizing different web technologies to build tools for data security, life, and entertainment. I have some of my experiences 
                 outlined on this website. If you want to hire me or ask questions about my projects, reach out to me "<a class="underline" href="mailto:liam.fitzpatrick@live.com">here</a>.</P>
             </div>
         </div>
